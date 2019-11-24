@@ -1,0 +1,16 @@
+@import '../../styles/index';
+
+.app-core {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: $app-header-height 1fr;
+
+  &__content {
+    background: $colors-light-gray;
+    padding: $app-space-xl;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 20px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "english",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=DEV nodemon app/index.js",
+    "start": "nodemon app/index.js",
+    "setup": "yarn install --registry https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4"
+  }
+}

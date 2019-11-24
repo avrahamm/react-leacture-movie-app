@@ -1,0 +1,24 @@
+@import '../../styles/index';
+
+.app-movies-table {
+  &__item {
+    border: 1px solid $colors-dark-gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $app-space-m;
+    
+    &:not(:last-child) {
+      border-bottom: 0;
+    }
+  }
+
+  &__remove-btn {
+    font-size: 18px;
+    &:hover {
+      color: $colors-dark-gray;
+    }
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../styles/index';
+
+.app-movie-item {
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  @include boxShadow();
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    opacity: 0.8;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: $app-space-lg;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      height: 100px;
+    }
+
+    &::after {
+      content: '';
+      transition: all 0.7s;
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0px;
+      background: transparent;
+    }
+
+    &:hover::after {
+      background: #fff;
+      transform: scaleY(4);
+      opacity: 0;
+    }
+  }
+}
